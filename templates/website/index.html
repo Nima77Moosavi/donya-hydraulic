@@ -1,18 +1,366 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="{% static "css/style.css" %}" />
-  </head>
-  <body>
-    <h1>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
-      accusantium aperiam impedit ipsam explicabo, culpa necessitatibus
-      veritatis odit consectetur assumenda magnam hic nam nobis suscipit
-      deleniti vitae rerum quas deserunt!
-    </h1>
-  </body>
-</html>
+{% extends "base.html" %} {% load static %} {% block content %}
+<!-- Hero -->
+<section id="hero">
+  <h4>Trade-in-offer</h4>
+  <h2>Super value deals</h2>
+  <h1>On all products</h1>
+  <p>Save more with coupons & up to 70% off!</p>
+  <button>Show now</button>
+</section>
+
+<!-- Feature -->
+<section id="feature" class="section-p1">
+  <div class="feature-box">
+    <img src="{% static 'images/features/f1.png' %}" alt="" />
+    <h6>ارسال سریع</h6>
+  </div>
+  <div class="feature-box">
+    <img src="{% static 'images/features/f2.png' %}" alt="" />
+    <h6>سفارش آنلاین</h6>
+  </div>
+  <div class="feature-box">
+    <img src="{% static 'images/features/f3.png' %}" alt="" />
+    <h6>قیمت کمتر</h6>
+  </div>
+  <div class="feature-box">
+    <img src="{% static 'images/features/f4.png' %}" alt="" />
+    <h6>تخفیف</h6>
+  </div>
+  <div class="feature-box">
+    <img src="{% static 'images/features/f5.png' %}" alt="" />
+    <h6>خرید با رضایت</h6>
+  </div>
+  <div class="feature-box">
+    <img src="{% static 'images/features/f6.png' %}" alt="" />
+    <h6>پشتیبانی</h6>
+  </div>
+</section>
+
+<!-- Product -->
+<section id="product1" class="section-p1">
+  <h2>محصولات پر فروش</h2>
+  <p>پمپ های هیدرولیک</p>
+  <div class="product-container">
+    <div class="product">
+      <img src="{% static 'images/products/f1.jpg' %}" alt="" />
+      <div class="description">
+        <span>adidas</span>
+        <h5>پمپ 1</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href="#"
+        ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+      ></a>
+    </div>
+    <div class="product">
+      <img src="{% static 'images/products/f2.jpg' %}" alt="" />
+      <div class="description">
+        <span>adidas</span>
+        <h5>پمپ 2</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href="#"
+        ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+      ></a>
+    </div>
+    <div class="product">
+      <img src="{% static 'images/products/f3.jpg' %}" alt="" />
+      <div class="description">
+        <span>adidas</span>
+        <h5>پمپ 3</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href="#"
+        ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+      ></a>
+    </div>
+    <div class="product">
+      <img src="{% static 'images/products/f4.jpg' %}" alt="" />
+      <div class="description">
+        <span>adidas</span>
+        <h5>پمپ 4</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href="#"
+        ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+      ></a>
+    </div>
+    <div class="product">
+      <img src="{% static 'images/products/f5.jpg' %}" alt="" />
+      <div class="description">
+        <span>adidas</span>
+        <h5>Cartoon Astronaut T-Shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href="#"
+        ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+      ></a>
+    </div>
+    <div class="product">
+      <img src="{% static 'images/products/f6.jpg' %}" alt="" />
+      <div class="description">
+        <span>adidas</span>
+        <h5>Cartoon Astronaut T-Shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href="#"
+        ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+      ></a>
+    </div>
+    <div class="product">
+      <img src="{% static 'images/products/f7.jpg' %}" alt="" />
+      <div class="description">
+        <span>adidas</span>
+        <h5>Cartoon Astronaut T-Shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href="#"
+        ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+      ></a>
+    </div>
+    <div class="product">
+      <img src="{% static 'images/products/f8.jpg' %}" alt="" />
+      <div class="description">
+        <span>adidas</span>
+        <h5>Cartoon Astronaut T-Shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href="#"
+        ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+      ></a>
+    </div>
+  </div>
+</section>
+
+<!-- Banner -->
+<section id="banner" class="section-m1">
+  <h4>Reapair Services</h4>
+  <h2>Up to <span>70% Off</span> - All t-Shirts & Accessories</h2>
+  <button class="normal">Explore More</button>
+</section>
+
+<!-- Product -->
+<section id="product1" class="section-p1">
+  <h2>خدمات</h2>
+  <p>Summer Collection New Modern Design</p>
+  <div class="product-container">
+    <div class="product">
+      <img src="{% static 'images/products/n1.jpg' %}" alt="" />
+      <div class="description">
+        <span>adidas</span>
+        <h5>Cartoon Astronaut T-Shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href="#"
+        ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+      ></a>
+    </div>
+    <div class="product">
+      <img src="{% static 'images/products/n2.jpg' %}" alt="" />
+      <div class="description">
+        <span>adidas</span>
+        <h5>Cartoon Astronaut T-Shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href="#"
+        ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+      ></a>
+    </div>
+    <div class="product">
+      <img src="{% static 'images/products/n3.jpg' %}" alt="" />
+      <div class="description">
+        <span>adidas</span>
+        <h5>Cartoon Astronaut T-Shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href="#"
+        ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+      ></a>
+    </div>
+    <div class="product">
+      <img src="{% static 'images/products/n4.jpg' %}" alt="" />
+      <div class="description">
+        <span>adidas</span>
+        <h5>Cartoon Astronaut T-Shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href="#"
+        ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+      ></a>
+    </div>
+    <div class="product">
+      <img src="{% static 'images/products/n5.jpg' %}" alt="" />
+      <div class="description">
+        <span>adidas</span>
+        <h5>Cartoon Astronaut T-Shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href="#"
+        ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+      ></a>
+    </div>
+    <div class="product">
+      <img src="{% static 'images/products/n6.jpg' %}" alt="" />
+      <div class="description">
+        <span>adidas</span>
+        <h5>Cartoon Astronaut T-Shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href="#"
+        ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+      ></a>
+    </div>
+    <div class="product">
+      <img src="{% static 'images/products/n7.jpg' %}" alt="" />
+      <div class="description">
+        <span>adidas</span>
+        <h5>Cartoon Astronaut T-Shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href="#"
+        ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+      ></a>
+    </div>
+    <div class="product">
+      <img src="{% static 'images/products/n8.jpg' %}" alt="" />
+      <div class="description">
+        <span>adidas</span>
+        <h5>Cartoon Astronaut T-Shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href="#"
+        ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+      ></a>
+    </div>
+  </div>
+</section>
+
+<!-- Banner2 -->
+<section id="sm-banner" class="section-p1">
+  <div class="banner-box">
+    <h4>crazy deals</h4>
+    <h2>buy 1 get 1 free</h2>
+    <span>The best classic dress is on sale at cara</span>
+    <button class="white">Learn More</button>
+  </div>
+  <div class="banner-box banner-box2">
+    <h4>spring/summer</h4>
+    <h2>buy 1 get 1 free</h2>
+    <span>The best classic dress is on sale at cara</span>
+    <button class="white">Collection</button>
+  </div>
+</section>
+
+<!-- Banner3 -->
+<section id="banner3">
+  <div class="banner-box">
+    <h2>SEASONAL SALE</h2>
+    <h3>Winter Collection -50% OFF</h3>
+  </div>
+  <div class="banner-box banner-box2">
+    <h2>NEW FOOTWEAR COLLECTION</h2>
+    <h3>Spring / Summer 2022</h3>
+  </div>
+  <div class="banner-box banner-box3">
+    <h2>T-SHIRTS</h2>
+    <h3>New Trendy Prints</h3>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section id="newsletter" class="section-p1 section-m1">
+  <div class="newstext">
+    <h4>Sign Up For Newsletters</h4>
+    <p>
+      Get E-mail updates about our latest shop and
+      <span>special offers.</span>
+    </p>
+  </div>
+  <div class="form">
+    <input type="text" placeholder="Your email address" />
+    <button class="normal">Sign Up</button>
+  </div>
+</section>
+
+<!-- Footer -->
+{% endblock content %}
